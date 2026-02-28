@@ -1,0 +1,25 @@
+
+/* **************
+Exemple d'animation des slides
+ ************** */
+
+.bespoke-slide {
+    transition: transform 0.8s ease-in-out;
+}
+
+.bespoke-after {
+    transform: translateX(100%);
+}
+.bespoke-before {
+    transform: translateX(-100%);
+}
+.bespoke-active {
+    transform: translateX(0)
+}
+
+/* **************
+Exemple d'animation des bullets
+ ************** */
+.bespoke-bullet {
+    transition: opacity .3s ease;
+}

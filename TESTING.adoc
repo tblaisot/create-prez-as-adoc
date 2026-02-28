@@ -1,0 +1,73 @@
+= Testing create-prez-as-adoc locally
+
+This document explains how to test the `create-prez-as-adoc` CLI tool on your local machine.
+
+== Prerequisites
+
+Make sure you have Node.js and npm installed.
+
+== Method 1: Using node directly
+
+This is the simplest way to test the CLI without installing it globally.
+
+1. Navigate to the `create-prez-as-adoc` directory:
+[source,bash]
+----
+cd create-prez-as-adoc
+----
+
+2. Install dependencies:
+[source,bash]
+----
+npm install
+----
+
+3. Run the CLI to create a new project:
+[source,bash]
+----
+node bin/index.js my-test-project
+----
+
+4. Verify that the `my-test-project` directory was created with the expected structure.
+
+== Method 2: Using npm link
+
+This method allows you to use the `create-prez-as-adoc` command as if it were installed globally.
+
+1. Navigate to the `create-prez-as-adoc` directory:
+[source,bash]
+----
+cd create-prez-as-adoc
+----
+
+2. Link the package:
+[source,bash]
+----
+npm link
+----
+
+3. Now you can use the command anywhere:
+[source,bash]
+----
+create-prez-as-adoc my-linked-project
+----
+
+4. To remove the link when you are done:
+[source,bash]
+----
+npm unlink -g create-prez-as-adoc
+----
+
+== Verification Steps
+
+After creating a project, you should:
+
+1. Check that `package.json` contains the correct project name, author (from git config), and default license.
+2. Check that `README.adoc` and `src/index.adoc` have the correct attributes rendered.
+3. Try to run the generated project:
+[source,bash]
+----
+cd my-test-project
+npm install
+npm run dev
+----

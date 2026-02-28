@@ -1,0 +1,5 @@
+@import url("@tblaisot/prez-as-adoc/bespoke/styles/main.css");
+@import url("@tblaisot/prez-as-adoc/slides-templates/styles/main.css");
+
+@import url("./variables.css");
+@import url("./animations.css");
