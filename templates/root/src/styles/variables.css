@@ -1,0 +1,5 @@
+.bespoke-parent {
+    --slide-ratio: calc(16 / 9);
+    /*--slide-ratio: calc(4 / 3);*/
+    --slide-width: 1280px;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "create-prez-as-adoc",
+  "version": "1.0.0",
+  "description": "CLI to initialize a new prez-as-adoc project",
+  "main": "bin/index.js",
+  "type": "module",
+  "bin": {
+    "create-prez-as-adoc": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "enquirer": "^2.4.1",
+    "fs-extra": "^11.3.3",
+    "path": "^0.12.7"
+  }
+}

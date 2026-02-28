@@ -1,0 +1,236 @@
+= <%= projectName %>
+:imagesdir: ../assets/images
+:icons: font
+:slide-template-attr: layout
+:slide-default-template: default
+:data-attributes: step,step-items,bespoke-backdrop
+:lang: fr
+:author: <%= author %>
+:license: <%= license %>
+:copyright: <%= copyright %>
+:description: exemple of prez a doc
+:keywords: asciidoctor
+
+[role="slide-speaker",bespoke-backdrop=test]
+== Présentation speaker
+
+image::avatar.png[role=speaker-avatar]
+[.speaker-name]
+Grand Schtroumpf
+[.speaker-role]
+Chef des Schtroumpfs +
+@onepoint
+
+[NOTE.speaker]
+====
+This is a speaker note
+
+* IT
+* SHOULD
+* SUPPORT
+* ELEMENTS
+====
+
+[.title-only.title-xl]
+== Grand titre
+
+
+[.title-only]
+== Titre Moyen
+
+[.title-subtitle]
+== Titre + sous-titre
+
+Sous-titre d'exemple
+
+// possibilité d'être plus explicite avec[slot=subtitle]
+
+== !
+
+image::placeholder.jpg[role=image-full]
+
+
+[layout=two-columns,role=columns-1-1]
+== Texte + image
+
+Un texte d'exemple, avec *mise en forme* et un lien interne.
+
+Quelques points clés :
+
+* point A
+* point B
+
+
+[slot=right-column]
+image::placeholder.jpg[]
+
+
+[layout=two-columns,role=columns-1-1]
+== !
+
+Un texte d'exemple, avec *mise en forme* et un lien interne.
+
+Quelques points clés :
+
+* point A
+* point B
+
+
+[slot=right-column]
+image::placeholder.jpg[]
+
+
+[layout=two-columns-title,role=columns-1-1,bespoke-backdrop=test]
+== Titre + image
+
+[slot=right-column]
+image::placeholder.jpg[]
+
+
+[layout=two-columns-title,role="columns-1-1 title-subtitle"]
+== Titre
+
+Sous-titre
+
+// possibilité d'être plus explicite avec[slot=subtitle]
+
+[slot=right-column]
+image::placeholder.jpg[]
+
+
+== !
+
+[source,java]
+----
+public class TestClass {
+    public TestClass() {
+
+    }
+
+    public void testMethod() {
+
+    }
+}
+----
+
+
+== Code + titre
+
+[source,java]
+----
+public class TestClass {
+    public TestClass() {
+
+    }
+
+    public void testMethod() {
+
+    }
+}
+----
+
+
+[layout=two-columns,role=columns-1-1]
+== Code + image
+
+[source,java]
+----
+public class TestClass {
+    public TestClass() {
+
+    }
+
+    public void testMethod() {
+
+    }
+}
+----
+
+
+[slot=right-column]
+image::placeholder.jpg[]
+
+
+== Texte
+
+Un texte d'exemple, avec *mise en forme* et un lien interne.
+
+Quelques points clés :
+
+* point A
+* point B
+
+
+== List
+
+[%step]
+* Un point
+* Deux points
+* Trois points
+
+== Tableau
+
+[cols="2,3",frame=all,grid=all]
+|===
+| Colonne | Valeur
+
+| A
+| 123
+
+| B
+| 456
+|===
+
+== !
+
+[cols="2,3",frame=all,grid=all]
+|===
+| Colonne | Valeur
+
+| A
+| 123
+
+| B
+| 456
+|===
+
+
+
+
+[layout=two-columns,role=columns-1-1]
+== Tableau + texte
+
+Un texte d'exemple, avec *mise en forme* et un lien interne.
+
+Quelques points clés :
+
+* point A
+* point B
+
+
+[slot=right-column]
+[cols="2,3",frame=all,grid=all]
+|===
+| Colonne | Valeur
+
+| A
+| 123
+
+| B
+| 456
+|===
+
+== A List of step
+
+[%step]
+* Point 1
+* Point 2
+* Point 3
+* Point 4
+* Point 5
+* Point 6
+
+
+== Final slide
+
+This is the end
