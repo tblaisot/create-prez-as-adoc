@@ -1,5 +1,12 @@
+/* Import minimal styles for a working slide deck */
 @import url("@tblaisot/prez-as-adoc/bespoke/styles/main.css");
+/* Import styles for the defautl slides templates (2 columns for exemple) */
 @import url("@tblaisot/prez-as-adoc/slides-templates/styles/main.css");
+/* Import default theme with some util blocks (image-full for exemple) */
+@import url("@tblaisot/prez-as-adoc/themes/default/main.css");
+
+/* Import highlight.js style for code */
+@import url('highlight.js/styles/github.css');
 
 @import url("./variables.css");
 @import url("./animations.css");
