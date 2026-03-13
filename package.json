@@ -1,6 +1,6 @@
 {
   "name": "create-prez-as-adoc",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "CLI to initialize a new prez-as-adoc project",
   "repository": {
     "type": "git",
